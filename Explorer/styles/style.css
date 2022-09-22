@@ -1,0 +1,271 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../assets/Fundo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #121214;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  max-width: 580px;
+  width: 90%;
+  margin: 32px auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 2.4rem;
+}
+
+/* Meus jogos */
+body * {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  margin-top: 32px;
+  height: calc(120px + 32px);
+}
+
+header div {
+  width: 150px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  padding: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(#9572fc), color-stop(50.52%, #43e7ad), to(#e2d45c));
+  background: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+header div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header div img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+section {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#9572fc), color-stop(50.52%, #43e7ad), to(#e2d45c));
+  background: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+  border-radius: 8px;
+  padding-top: 4px;
+  margin-top: 3.2rem;
+}
+
+section div {
+  background-color: #2a2634;
+  padding: 24px 24px 32px;
+  border-radius: 10px;
+}
+
+section h2 {
+  line-height: 1.6;
+  letter-spacing: -0.47px;
+}
+
+section p {
+  color: #a1a1aa;
+  letter-spacing: -0.18px;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 1.6rem;
+  margin-top: 2.4rem;
+}
+
+section ul li {
+  -webkit-transition: -webkit-filter 1.5s, -webkit-transform .4s;
+  transition: -webkit-filter 1.5s, -webkit-transform .4s;
+  transition: filter 1.5s, transform .4s;
+  transition: filter 1.5s, transform .4s, -webkit-filter 1.5s, -webkit-transform .4s;
+}
+
+section ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: contrast(140%);
+          filter: contrast(140%);
+}
+
+.games-list img {
+  border-radius: 8px;
+  width: 90px;
+}
+
+.channel-list img {
+  width: 70px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #44c5;
+}
+
+/* Animações */
+header div {
+  -webkit-animation: fromTop 1.5s .5s backwards;
+          animation: fromTop 1.5s .5s backwards;
+}
+
+@-webkit-keyframes fromTop {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+main section {
+  -webkit-animation: fromBottom 1.5s backwards;
+          animation: fromBottom 1.5s backwards;
+}
+
+main section:nth-child(1) {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+main section:nth-child(2) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+main section:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes fromBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+main section ul li {
+  -webkit-animation: fromLeft 1.5s backwards;
+          animation: fromLeft 1.5s backwards;
+}
+
+main section ul li:nth-child(1) {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+main section ul li:nth-child(2) {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+main section ul li:nth-child(3) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+main section ul li:nth-child(4) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+@-webkit-keyframes fromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
