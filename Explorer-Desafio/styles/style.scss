@@ -99,7 +99,7 @@ section ul {
   gap: 16px; 
 }
 
-section ul li {
+section .movies-list li, section .series-list li {
   width: 100px;
 
   transition: transform .4s;
@@ -113,12 +113,6 @@ section ul li:hover {
 section ul li a img {
   border-radius: 8px;
   border: 1px solid #555;
-}
-
-section ul.contact-list li {
-  width: 24px;
-  display: grid;
-  justify-content: flex-start;
 }
 
 section ul.contact-list li a img {
